@@ -11,7 +11,7 @@ class Marmot(object):
 
     def whistle(self):
         if self._belly:
-            key = self._belly.keys()[0]
+            key = list(self._belly)[0]
             if self._belly[key] > 0:
                 self._belly[key] -= 1
             else:
