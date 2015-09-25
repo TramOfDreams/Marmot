@@ -35,7 +35,8 @@ class MarmotList(Marmot):
     
     def whistle(self):
         if len(self.belly) > 0: 
-            self.belly = self.belly[:-1] # del self.belly[-1]
+            #self.belly = self.belly[:-1]
+            del self.belly[-1]
             return True
         else:
             return False
