@@ -17,11 +17,7 @@ class TestMarmot(unittest.TestCase):
         self.m.feed('beer')
         self.m.feed('nut')
 
-        # View contents of belly.
-        self.assertIn('beer', self.m.belly)
-        self.assertIn('nut', self.m.belly)
-
-        # whistle() behaviour test.
+        # Whistle test.
         self.assertTrue(self.m.whistle())
         self.assertTrue(self.m.whistle())
         self.assertTrue(self.m.whistle())
